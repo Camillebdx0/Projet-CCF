@@ -1,0 +1,62 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	background: linear-gradient(to right, #98FB98, #87CEEB);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center{
+	width: 450px;
+	background: rgba(255, 255, 255, .5);
+	padding: 4rem;
+	border-radius: 10px;
+	position: relative;
+}
+
+.center::before{
+	content: '';
+	position: absolute;
+	background: rgba(255, 255, 255, .15);
+	inset: 0;
+	transform: rotate(-5deg);
+	z-index: -1;
+}
+
+.bts-form select{
+	width: 100%;
+	height: 25px;
+	position: relative;
+	overflow-y: auto;
+	border-radius: 50px;
+}
+
+.bts-form select:hover{
+	background: rgba(248, 248, 255, .85);
+	cursor: pointer;
+}
+
+.bts-form option{
+	background-color: rgb(248, 248, 255);
+	text-align: center;
+}
+
+.bts-form button{
+	background: black;
+	color: white;
+	padding: 1rem;
+	border-radius: 100px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background .5s;
+}
+
+.bts-form button:hover{
+	background: rgba(0, 0, 0, .85);
+	cursor: pointer;
+}
