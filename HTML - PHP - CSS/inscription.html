@@ -1,0 +1,44 @@
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - CCF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="center">
+            <center>
+            <img src="logo.png" alt="Logo ENC">
+            <h1>Inscription</h1>
+            <div>Veuillez vous inscrire pour utiliser la plateforme</div><br>
+            <form method="POST" action="register.php">
+                <table class="table">
+                    <tr>
+                        <th><input name="Numen" type="text" placeholder="Numen" maxlength="13" required></th>
+                        <th><input name="Email" value="" type="text" placeholder="Email" required></th>
+                    </tr>
+                    <tr>
+                        <th><input name="Nom" value="" type="text" placeholder="Nom" required></th>
+                        <th><input name="Prenom" value="" type="text" placeholder="Prenom" required></th>
+                    </tr>
+                    <tr>                        
+                        <th><input id="password" name="Password" type="password" placeholder="Mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Votre mot de passe doit être composée d'au moins 8 char avec une majuscule une minuscule et un nombre." required></th>
+                        <th><input id="passwordconfirm" name="Passwordconfirm" type="password" placeholder="Confirmation Mot de passe" required></th>
+                    </tr>
+                    <div class="registrationFormAlert" id="divCheckPasswordMatch"></div>          
+                  </table>
+                  <table class="tel">
+                    <tr>
+                        <th><input name="Tel" value="" type="text" placeholder="Téléphone" maxlength="10" required></th>
+                    </tr>
+                    <tr>
+                        <th><button name="Submit" type="submit"><span>S'inscrire</span></button></th>
+                    </tr>
+                  </table>
+            </form>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
